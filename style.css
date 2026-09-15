@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* =========================
+   FLYER
+========================= */
+
+.flyer {
+    width: 1080px;
+    min-height: 1350px;
+    margin: 30px auto;
+    background: #080808;
+    color: rgba(255, 255, 255, 0.874);
+    overflow: hidden;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    height: 480px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 70% 30%,
+            #3a3a3a 0%,
+            #111 35%,
+            #080808 70%
+        );
+}
+
+
+.hero-content {
+    width: 57%;
+    padding: 45px 30px 30px 60px;
+    position: relative;
+    z-index: 3;
+}
+
+
+.hours {
+    font-size: 28px;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+
+.name {
+    font-family: "Anton", sans-serif;
+    font-size: 78px;
+    line-height: .9;
+    color: #ffd21c;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+
+/* THEME */
+
+.theme-label {
+    display: inline-block;
+    background: #ffd21c;
+    color: #080808;
+
+    font-size: 18px;
+    font-weight: 900;
+
+    padding: 7px 15px;
+    margin-bottom: 10px;
+}
+
+
+.theme {
+    font-family: "Anton", sans-serif;
+    font-size: 54px;
+    line-height: .95;
+    letter-spacing: 1px;
+}
+
+
+.theme span {
+    color: #ffd21c;
+}
+
+
+.subtitle {
+    margin-top: 15px;
+
+    font-size: 17px;
+    line-height: 1.4;
+    font-weight: 600;
+
+    max-width: 500px;
+}
+
+
+/* SPEAKER */
+
+.speaker {
+    position: absolute;
+
+    right: -40px;
+    bottom: 0;
+
+    width: 48%;
+    height: 100%;
+}
+
+
+.speaker img {
+  width: 300px;
+    object-fit: cover;
+    object-position: center top;
+
+    filter: contrast(1.05);
+}
+
+
+/* =========================
+   LEARNING
+========================= */
+
+.learning {
+    padding: 25px 45px 20px;
+}
+
+
+.section-title {
+    width: fit-content;
+
+    margin: 0 auto 25px;
+
+    background: #ffd21c;
+    color: #080808;
+
+    padding: 10px 35px;
+
+    font-size: 25px;
+    font-weight: 900;
+
+    transform: skew(-8deg);
+}
+
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+
+.course {
+    border: 1px solid #555;
+    border-radius: 8px;
+
+    padding: 18px;
+
+    min-height: 225px;
+
+    background: #0d0d0d;
+
+    position: relative;
+}
+
+
+.course:hover {
+    border-color: #ffd21c;
+}
+
+
+.number {
+    color: #080808;
+    background: #ffd21c;
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 900;
+
+    margin-bottom: 12px;
+}
+
+
+.course h3 {
+    color: white;
+
+    font-size: 17px;
+    line-height: 1.2;
+
+    margin-bottom: 12px;
+}
+
+
+.course p {
+    color: #c9c9c9;
+
+    font-size: 12.5px;
+    line-height: 1.45;
+}
+
+
+/* =========================
+   EVENT INFO
+========================= */
+
+.event-info {
+    margin: 10px 45px;
+
+    padding: 22px 0;
+
+    border-top: 1px solid #ffd21c;
+    border-bottom: 1px solid #ffd21c;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.info-box {
+    display: flex;
+
+    gap: 12px;
+
+    padding: 0 18px;
+
+    border-right: 1px solid #555;
+}
+
+
+.info-box:last-child {
+    border-right: none;
+}
+
+
+.icon {
+    color: #ffd21c;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+.info-box small {
+    display: block;
+
+    color: #ffd21c;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    margin-bottom: 4px;
+}
+
+
+.info-box strong {
+    display: block;
+
+    font-size: 17px;
+}
+
+
+.info-box p {
+    color: #bbb;
+
+    font-size: 10px;
+
+    line-height: 1.3;
+
+    margin-top: 4px;
+}
+
+
+.fee strong {
+    color: #ffd21c;
+
+    font-size: 29px;
+}
+
+
+/* =========================
+   PAYMENT
+========================= */
+
+.payment {
+    margin: 20px 45px;
+
+    border: 1px solid #ffd21c;
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+.payment h2 {
+    display: inline-block;
+
+    background: #ffd21c;
+    color: #080808;
+
+    padding: 12px 25px;
+
+    font-size: 22px;
+}
+
+
+.payment-content {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+
+    padding: 20px 25px;
+}
+
+
+.bank,
+.proof,
+.contact {
+    padding: 0 20px;
+}
+
+
+.bank {
+    border-right: 1px solid #555;
+}
+
+
+.proof {
+    border-right: 1px solid #555;
+}
+
+
+.bank p {
+    font-size: 13px;
+
+    line-height: 1.35;
+
+    margin-bottom: 9px;
+}
+
+
+.bank span {
+    display: block;
+
+    color: #ffd21c;
+
+    font-weight: 700;
+}
+
+
+.bank strong {
+    display: block;
+
+    color: #ffd21c;
+
+    font-size: 21px;
+}
+
+
+.whatsapp {
+    display: inline-block;
+
+    background: #ffd21c;
+    color: #080808;
+
+    font-weight: 900;
+
+    padding: 6px 12px;
+
+    margin-bottom: 10px;
+
+    border-radius: 4px;
+}
+
+
+.proof p,
+.contact p {
+    color: #bbb;
+
+    font-size: 12px;
+
+    margin-bottom: 6px;
+}
+
+
+.proof strong,
+.contact strong {
+    font-size: 20px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 15px 20px 25px;
+}
+
+.primary-btn {
+    margin-top: 15px;
+    background: #ffd21c;
+    color: #000;
+    font-weight: 700;
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 30px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.primary-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px #564917;
+}
+
+
+footer p {
+    color: #ffd21c;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+    .flyer {
+        width: 95%;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .flyer {
+        width: 100%;
+    }
+
+    .hero {
+        height: auto;
+        /* min-height: 700px; */
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 35px 25px;
+    }
+
+    .speaker {
+        opacity: .35;
+        width: 70%;
+    }
+
+
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .event-info {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .payment-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .bank,
+    .proof {
+        border-right: none;
+        border-bottom: 1px solid #555;
+        padding-bottom: 15px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .theme {
+        font-size: 40px;
+    }
+
+    .name {
+        font-size: 55px;
+    }
+
+    .courses {
+        grid-template-columns: 1fr;
+    }
+
+    .event-info {
+        grid-template-columns: 1fr;
+    }
+
+    .info-box {
+        border-right: none;
+        border-bottom: 1px solid #333;
+        padding-bottom: 15px;
+    }
+
+}

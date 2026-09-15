@@ -496,16 +496,14 @@ footer p {
         gap: 20px;
     }
 
-    .bank{
+    .bank,
+    .proof{
         border-right: none;
         border-bottom: 1px solid #555;
         padding-bottom: 15px;
     }
-    .proof {
-        border-right: none;
-        padding-bottom: 15px;
-    }
-    .whatsapp{
+    
+    .contact{
         border-bottom: 1px solid #555;
     }
 
